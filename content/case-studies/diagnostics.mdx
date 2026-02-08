@@ -1,0 +1,88 @@
+---
+title: "Diagnostics - Helping customers ship with confidence"
+number: "3"
+hook: "Users want visibility, not abstraction."
+description: "Building a self-service troubleshooting tool that reduced L1 support tickets by 35% and serves 700+ customers."
+tags: ["Self-Service", "Support", "Customer Success"]
+metrics: [{ value: "35%", label: "Ticket reduction" }, { value: "700+", label: "Customers" }]
+prevSlug: "ai-augmentation"
+nextSlug: "ai-evaluation"
+---
+
+## The Problem
+
+Before I became a PM, I was a Solutions Engineer at Whatfix. I spent my days helping customers configure and troubleshoot their implementations. I experienced the troubleshooting pain firsthand.
+
+When content failed to display, authors had no visibility into why. The system knew why content failed. We just weren't telling anyone. The process looked like this:
+
+![Tedious troubleshooting workflow](/images/case-studies/diagnostics/troubleshooting-workflow.png)
+
+<Callout type="warning">
+The bottleneck wasn't technical complexity. It was a lack of visibility into what was happening in the system.
+</Callout>
+
+Troubleshooting was tedious, manual, disjointed, and entirely dependent on Whatfix support. Every failure, no matter how simple, generated a ticket.
+
+I conceptualized Diagnostics in 2022, but we couldn't ship due to organizational committments. Two years of mounting NPS feedback around troubleshooting pain & an org wide shift toward quality & self-serviceability meant Diagnostics resonated across the board. 
+
+## The Hypothesis
+
+The conventional wisdom was that our customers would be overwhelmed by too much technical information. Complexity is meant to be abstracted away, not surfaced.
+
+I agreed and disagreed. The hypothesis was that if we surfaced "what went wrong" and had a good "what you can do about it", customers would focus on the latter, even if they couldn't understand the former completely. 
+
+## The Insight
+
+We dove in, analyzed support tickets, customer feedback and conducted a dozen interviews. The insight was clear: our core personas aren't afraid of technical issues. They're frustrated by being kept in the dark about them. They want to see what's happening under the hood when things break, they just need it explained in their language.
+
+Authors aren't asking for less information. They were asking for *understandable* information.
+
+## The Solution
+
+Armed with these findings, Diagnostics was conceptualized to be a real-time, self-service troubleshooting tool built directly into Whatfix Studio. When content fails, authors can see exactly why, in plain language.
+
+### Capabilities
+
+1. **Real-time event-based feedback**: See step execution as it happens
+2. **"Why" visibility**: Each failure comes with an explanation
+3. **Rule evaluation status**: Visibility rules evaluated in real-time
+4. **Error classification**: Element detection, property mismatch, visibility rule failure
+5. **Actionable guidance**: Every error includes "What does this mean?" and "What you can do?"
+
+<div className="grid md:grid-cols-2 gap-4 my-6">
+
+![Diagnostics panel showing all content with evaluation status, organized by content type](/images/case-studies/diagnostics/content-evaluation.png)
+
+![Failure detail view showing visibility rule failure with explanation and actionable next steps](/images/case-studies/diagnostics/failure-messaging.png)
+
+</div>
+![Real-time flow execution showing step-by-step events with completion status](/images/case-studies/diagnostics/real-time-events.png)
+
+<TechnicalToggle title="What Diagnostics surfaces">
+
+- **Visibility rule failures**: Targeting conditions not met, with a breakdown of which specific conditions passed and which failed
+- **Element detection failures**: Element not found or wrong element matched
+- **Property mismatches**: Element found but its state doesn't match what was expected
+- Each error type includes a plain-language explanation and remediation steps specific to the failure
+
+</TechnicalToggle>
+
+## Business impact
+
+<div className="grid md:grid-cols-3 gap-4 my-6">
+  <MetricCard value="35%" label="L1 ticket reduction" context="Self-service resolution" />
+  <MetricCard value="700+" label="Active customers" context="Using Diagnostics regularly" />
+  <MetricCard value="45%" label="Repeat engagement" context="Users returning to feature" />
+</div>
+
+The 45% repeat engagement rate was particularly validating. Users weren't just trying Diagnostics once. They were integrating it into their workflow.
+
+The Diagnostics initiative led to me bagging the **Customer Insights Award** at Whatfix's internal R&D conference. The award specifically cited my approach to understanding and addressing customer pain points.
+
+![Receiving the Customer Insights Award for Diagnostics](/images/case-studies/diagnostics/customer-insights-award.png)
+
+## What I Learned
+
+The temptation when building for non-technical users is to assume complexity is a barrier. But users have a way of surprising you when you really dig in to understand their core problems. In this case, users were asking for visibility & clarity.
+
+Diagnostics was built as a platform, helping other teams across the organization leverage & plug in whenever they please. This way, using/contributing to Diagnostics became a forcing function for quality across the entire organization.
