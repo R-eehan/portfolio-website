@@ -66,6 +66,18 @@ export function Navigation() {
             Work
           </Link>
           <Link
+            href="/writing"
+            className="text-sm transition-colors duration-200 hover:text-[var(--mono-text)]"
+            style={{
+              fontFamily: "var(--font-sans)",
+              fontWeight: 500,
+              color: isActive("/writing") ? "var(--mono-text)" : "var(--mono-muted)",
+              letterSpacing: "0.01em",
+            }}
+          >
+            Writing
+          </Link>
+          <Link
             href="/about"
             className="text-sm transition-colors duration-200 hover:text-[var(--mono-text)]"
             style={{
@@ -135,6 +147,18 @@ export function Navigation() {
             }}
           >
             Work
+          </Link>
+          <Link
+            href="/writing"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="text-base transition-colors duration-200 hover:text-[var(--mono-text)]"
+            style={{
+              fontFamily: "var(--font-sans)",
+              fontWeight: 500,
+              color: isActive("/writing") ? "var(--mono-text)" : "var(--mono-muted)",
+            }}
+          >
+            Writing
           </Link>
           <Link
             href="/about"

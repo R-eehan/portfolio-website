@@ -102,6 +102,11 @@ body {
   outline-offset: 2px;
 }
 
+/* Tighten word spacing on monospace headings */
+h1, h2, h3 {
+  word-spacing: -0.1em;
+}
+
 /* Smooth scroll behavior */
 html {
   scroll-behavior: smooth;
