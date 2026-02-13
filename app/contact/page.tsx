@@ -15,13 +15,13 @@ export default function ContactPage() {
 
       {/* Hero Section */}
       <section
-        className="pt-24 md:pt-32 pb-16 md:pb-24"
+        className="pt-24 md:pt-32 pb-6 md:pb-8"
         style={{ backgroundColor: "var(--mono-bg)" }}
       >
         <div className="max-w-5xl mx-auto px-6 md:px-8">
           <div className="max-w-3xl">
             <p
-              className="text-xs tracking-[0.2em] uppercase mb-6"
+              className="text-xs tracking-[0.2em] uppercase mb-4"
               style={{
                 fontFamily: "var(--font-mono)",
                 color: "var(--mono-muted)",
@@ -30,7 +30,7 @@ export default function ContactPage() {
               Contact
             </p>
             <h1
-              className="text-3xl md:text-4xl leading-[1.1] mb-6"
+              className="text-3xl md:text-4xl leading-[1.1] mb-4"
               style={{
                 fontFamily: "var(--font-display)",
                 fontWeight: 700,
@@ -55,7 +55,7 @@ export default function ContactPage() {
 
       {/* Contact Options */}
       <section
-        className="py-16 md:py-24 border-t"
+        className="pt-6 md:pt-8 pb-10 md:pb-12 border-t"
         style={{
           backgroundColor: "var(--mono-surface)",
           borderColor: "var(--mono-border)",
@@ -260,7 +260,7 @@ export default function ContactPage() {
 
       {/* What I'm Looking For */}
       <section
-        className="py-16 md:py-24 border-t"
+        className="py-12 md:py-16 border-t"
         style={{
           backgroundColor: "var(--mono-bg)",
           borderColor: "var(--mono-border)",

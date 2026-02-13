@@ -231,7 +231,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
       {/* Hero Section */}
       <section
-        className="pt-24 md:pt-32 pb-8 md:pb-12"
+        className="pt-24 md:pt-32 pb-6 md:pb-8"
         style={{ backgroundColor: "var(--mono-bg)" }}
       >
         <div className="max-w-5xl mx-auto px-6 md:px-8">
@@ -301,7 +301,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
       {/* Content Section — two column on desktop */}
       <section
-        className="py-12 md:py-16 border-t"
+        className="pt-4 md:pt-6 pb-12 md:pb-16 border-t"
         style={{
           backgroundColor: "var(--mono-bg)",
           borderColor: "var(--mono-border)",
@@ -311,7 +311,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           <div className="lg:grid lg:grid-cols-[1fr_200px] lg:gap-16">
             {/* Article */}
             <div className="max-w-3xl">
-              <article>
+              <article className="[&>:first-child]:mt-0">
                 <MDXRemote
                   source={content}
                   components={mdxComponents}
@@ -325,7 +325,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             </div>
 
             {/* TOC Sidebar */}
-            <TableOfContents items={toc} readingTime={readingTime} />
+            <TableOfContents items={toc} />
           </div>
         </div>
       </section>

@@ -7,7 +7,7 @@ export function Hero() {
       style={{ backgroundColor: "var(--mono-bg)" }}
     >
       {/* Hero Content — compact */}
-      <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-8 pt-24 md:pt-32 pb-12 md:pb-16">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-8 pt-24 md:pt-32 pb-6 md:pb-8">
         {/* Name */}
         <h1
           className="mono-animate-fade text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-5"

@@ -70,7 +70,7 @@ export function Callout({ type = "insight", children }: CalloutProps) {
 
   return (
     <div
-      className="my-8 p-6 rounded-lg border-l-4 flex gap-4"
+      className="my-5 p-5 rounded-lg border-l-4 flex gap-4"
       style={{
         backgroundColor: "var(--mono-surface)",
         borderLeftColor: style.borderColor,

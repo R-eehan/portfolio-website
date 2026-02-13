@@ -28,7 +28,7 @@ export default function WritingPage() {
 
       {/* Hero */}
       <section
-        className="pt-24 md:pt-32 pb-10 md:pb-14"
+        className="pt-24 md:pt-32 pb-6 md:pb-8"
         style={{ backgroundColor: "var(--mono-bg)" }}
       >
         <div className="max-w-5xl mx-auto px-6 md:px-8">
@@ -81,7 +81,7 @@ export default function WritingPage() {
               <Link
                 key={article.slug}
                 href={`/writing/${article.slug}`}
-                className="group block py-10 md:py-12 border-b transition-colors duration-200"
+                className="group block py-6 md:py-8 border-b transition-colors duration-200"
                 style={{ borderColor: "var(--mono-border)" }}
               >
                 <div className="flex-1">

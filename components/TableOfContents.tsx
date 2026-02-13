@@ -10,10 +10,9 @@ interface TOCItem {
 
 interface TableOfContentsProps {
   items: TOCItem[];
-  readingTime: number;
 }
 
-export function TableOfContents({ items, readingTime }: TableOfContentsProps) {
+export function TableOfContents({ items }: TableOfContentsProps) {
   const [activeId, setActiveId] = useState<string>("");
 
   useEffect(() => {
@@ -44,17 +43,6 @@ export function TableOfContents({ items, readingTime }: TableOfContentsProps) {
   return (
     <nav className="hidden lg:block">
       <div className="sticky top-32">
-        {/* Reading time */}
-        <p
-          className="text-xs mb-6"
-          style={{
-            fontFamily: "var(--font-mono)",
-            color: "var(--mono-accent)",
-          }}
-        >
-          {readingTime} min read
-        </p>
-
         {/* TOC heading */}
         <p
           className="text-xs tracking-[0.1em] uppercase mb-4"

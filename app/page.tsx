@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* Latest Writing Section */}
       <section
-        className="py-14 md:py-20 border-t"
+        className="pt-6 md:pt-8 pb-6 md:pb-8 border-t"
         style={{
           backgroundColor: "var(--mono-bg)",
           borderColor: "var(--mono-border)",
@@ -29,7 +29,7 @@ export default function Home() {
       >
         <div className="max-w-5xl mx-auto px-6 md:px-8">
           {/* Section Header */}
-          <div className="flex items-end justify-between mb-8 md:mb-10">
+          <div className="flex items-end justify-between mb-4 md:mb-6">
             <div>
               <p
                 className="text-xs tracking-[0.15em] uppercase mb-3"
@@ -92,7 +92,7 @@ export default function Home() {
                 <Link
                   key={article.slug}
                   href={`/writing/${article.slug}`}
-                  className="group block py-8 md:py-10 border-b transition-colors duration-200"
+                  className="group block py-5 md:py-6 border-b transition-colors duration-200"
                   style={{ borderColor: "var(--mono-border)" }}
                 >
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-8">
@@ -123,7 +123,7 @@ export default function Home() {
                             color: "var(--mono-accent)",
                           }}
                         >
-                          {readingTime}
+                          {readingTime} min read
                         </span>
                       </div>
 
@@ -200,7 +200,7 @@ export default function Home() {
 
       {/* Featured Work Section */}
       <section
-        className="py-14 md:py-20 border-t"
+        className="pt-6 md:pt-8 pb-6 md:pb-8 border-t"
         style={{
           backgroundColor: "var(--mono-bg)",
           borderColor: "var(--mono-border)",
@@ -208,7 +208,7 @@ export default function Home() {
       >
         <div className="max-w-5xl mx-auto px-6 md:px-8">
           {/* Section Header */}
-          <div className="flex items-end justify-between mb-8 md:mb-10">
+          <div className="flex items-end justify-between mb-4 md:mb-6">
             <div>
               <p
                 className="text-xs tracking-[0.15em] uppercase mb-3"
@@ -264,7 +264,7 @@ export default function Home() {
               <Link
                 key={study.slug}
                 href={`/work/${study.slug}`}
-                className="group block py-8 md:py-10 border-b transition-colors duration-200"
+                className="group block py-5 md:py-6 border-b transition-colors duration-200"
                 style={{ borderColor: "var(--mono-border)" }}
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-8">

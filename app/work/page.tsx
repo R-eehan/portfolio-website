@@ -19,7 +19,7 @@ export default function WorkPage() {
 
       {/* Hero */}
       <section
-        className="pt-24 md:pt-32 pb-10 md:pb-14"
+        className="pt-24 md:pt-32 pb-6 md:pb-8"
         style={{ backgroundColor: "var(--mono-bg)" }}
       >
         <div className="max-w-5xl mx-auto px-6 md:px-8">
@@ -70,7 +70,7 @@ export default function WorkPage() {
             <Link
               key={study.slug}
               href={`/work/${study.slug}`}
-              className="group block py-10 md:py-12 border-b transition-colors duration-200"
+              className="group block py-6 md:py-8 border-b transition-colors duration-200"
               style={{ borderColor: "var(--mono-border)" }}
             >
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
@@ -179,7 +179,7 @@ export default function WorkPage() {
 
       {/* Reading Order */}
       <section
-        className="py-16 md:py-20 border-t"
+        className="py-12 md:py-16 border-t"
         style={{
           backgroundColor: "var(--mono-bg)",
           borderColor: "var(--mono-border)",
