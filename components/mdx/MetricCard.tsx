@@ -7,7 +7,7 @@ interface MetricCardProps {
 export function MetricCard({ value, label, context }: MetricCardProps) {
   return (
     <div
-      className="p-6 rounded-lg border my-6"
+      className="p-5 rounded-lg border my-3"
       style={{
         backgroundColor: "var(--mono-surface)",
         borderColor: "var(--mono-border)",

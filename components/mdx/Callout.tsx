@@ -70,7 +70,7 @@ export function Callout({ type = "insight", children }: CalloutProps) {
 
   return (
     <div
-      className="my-5 p-5 rounded-lg border-l-4 flex gap-4"
+      className="my-4 px-5 py-4 rounded-lg border-l-4 flex gap-4"
       style={{
         backgroundColor: "var(--mono-surface)",
         borderLeftColor: style.borderColor,
@@ -78,7 +78,7 @@ export function Callout({ type = "insight", children }: CalloutProps) {
     >
       <div style={{ color: style.iconColor }}>{style.icon}</div>
       <div
-        className="flex-1 text-base leading-relaxed"
+        className="flex-1 text-base leading-relaxed [&>*:last-child]:mb-0"
         style={{
           fontFamily: "var(--font-sans)",
           color: "var(--mono-text)",

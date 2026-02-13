@@ -46,7 +46,7 @@ const mdxComponents = {
     return (
       <h2
         id={id}
-        className="text-xl md:text-2xl mt-10 mb-4 scroll-mt-24"
+        className="text-xl md:text-2xl mt-8 mb-3 scroll-mt-24"
         style={{
           fontFamily: "var(--font-display)",
           fontWeight: 700,
@@ -65,7 +65,7 @@ const mdxComponents = {
     return (
       <h3
         id={id}
-        className="text-lg md:text-xl mt-8 mb-3 scroll-mt-24"
+        className="text-lg md:text-xl mt-6 mb-2 scroll-mt-24"
         style={{
           fontFamily: "var(--font-display)",
           fontWeight: 700,
