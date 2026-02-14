@@ -188,6 +188,10 @@ const mdxComponents = {
       {...props}
     />
   ),
+  img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img className="rounded-lg my-6 w-full" alt={props.alt || ""} {...props} />
+  ),
 };
 
 export async function generateStaticParams() {

@@ -66,11 +66,11 @@ export default function WorkPage() {
         }}
       >
         <div className="max-w-5xl mx-auto px-6 md:px-8">
-          {caseStudies.map((study) => (
+          {caseStudies.map((study, index) => (
             <Link
               key={study.slug}
               href={`/work/${study.slug}`}
-              className="group block py-6 md:py-8 border-b transition-colors duration-200"
+              className={`group block py-6 md:py-8 transition-colors duration-200 ${index < caseStudies.length - 1 ? "border-b" : ""}`}
               style={{ borderColor: "var(--mono-border)" }}
             >
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
@@ -174,71 +174,6 @@ export default function WorkPage() {
               </div>
             </Link>
           ))}
-        </div>
-      </section>
-
-      {/* Reading Order */}
-      <section
-        className="py-12 md:py-16 border-t"
-        style={{
-          backgroundColor: "var(--mono-bg)",
-          borderColor: "var(--mono-border)",
-        }}
-      >
-        <div className="max-w-5xl mx-auto px-6 md:px-8">
-          <h2
-            className="text-xl md:text-2xl mb-4"
-            style={{
-              fontFamily: "var(--font-display)",
-              fontWeight: 700,
-              color: "var(--mono-text)",
-            }}
-          >
-            Reading order
-          </h2>
-          <p
-            className="text-base mb-4"
-            style={{
-              fontFamily: "var(--font-sans)",
-              color: "var(--mono-muted)",
-              lineHeight: 1.7,
-            }}
-          >
-            Start with{" "}
-            <Link
-              href="/work/foundation"
-              className="underline underline-offset-3 hover:text-[var(--mono-text)] transition-colors"
-            >
-              Case Study Zero
-            </Link>
-            . It establishes the instrumentation and observability philosophy
-            that contextualizes all subsequent work.
-          </p>
-          <p
-            className="text-base"
-            style={{
-              fontFamily: "var(--font-sans)",
-              color: "var(--mono-muted)",
-              lineHeight: 1.7,
-            }}
-          >
-            From there,{" "}
-            <Link
-              href="/work/screensense-foundation"
-              className="underline underline-offset-3 hover:text-[var(--mono-text)] transition-colors"
-            >
-              Case Study 1
-            </Link>{" "}
-            and{" "}
-            <Link
-              href="/work/ai-augmentation"
-              className="underline underline-offset-3 hover:text-[var(--mono-text)] transition-colors"
-            >
-              Case Study 2
-            </Link>{" "}
-            show the progression from algorithmic discipline to strategic AI
-            augmentation.
-          </p>
         </div>
       </section>
 

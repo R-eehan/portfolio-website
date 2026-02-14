@@ -81,7 +81,7 @@ export default function Home() {
 
           {/* Article Entries */}
           <div className="space-y-1">
-            {articles.map((article) => {
+            {articles.map((article, index) => {
               const readingTime = getReadingTime(article.content);
               const date = new Date(article.frontmatter.date).toLocaleDateString(
                 "en-US",
@@ -92,7 +92,7 @@ export default function Home() {
                 <Link
                   key={article.slug}
                   href={`/writing/${article.slug}`}
-                  className="group block py-5 md:py-6 border-b transition-colors duration-200"
+                  className={`group block py-5 md:py-6 transition-colors duration-200 ${index < articles.length - 1 ? "border-b" : ""}`}
                   style={{ borderColor: "var(--mono-border)" }}
                 >
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-8">
@@ -260,11 +260,11 @@ export default function Home() {
 
           {/* Case Study Cards */}
           <div className="space-y-1">
-            {featuredWork.map((study) => (
+            {featuredWork.map((study, index) => (
               <Link
                 key={study.slug}
                 href={`/work/${study.slug}`}
-                className="group block py-5 md:py-6 border-b transition-colors duration-200"
+                className={`group block py-5 md:py-6 transition-colors duration-200 ${index < featuredWork.length - 1 ? "border-b" : ""}`}
                 style={{ borderColor: "var(--mono-border)" }}
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 md:gap-8">

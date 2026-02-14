@@ -37,7 +37,7 @@ export default function AboutPage() {
                 color: "var(--mono-text)",
               }}
             >
-              Hey, I&apos;m Reehan.
+              Hey, I&apos;m Reehan
             </h1>
             <p
               className="text-xl leading-relaxed"
@@ -46,8 +46,8 @@ export default function AboutPage() {
                 color: "var(--mono-muted)",
               }}
             >
-              Senior Platform Product Manager at Whatfix. I build and own the AI
-              engine that powers how millions of people learn and use software.
+              Senior Platform Product Manager at Whatfix where I build and own the AI
+              engine that powers how thousands of users learn and use enterprise software.
             </p>
           </div>
         </div>
@@ -63,27 +63,23 @@ export default function AboutPage() {
       >
         <div className="max-w-5xl mx-auto px-6 md:px-8">
           <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
-            {/* Photo placeholder */}
+            {/* Photo */}
             <div
-              className="aspect-[4/5] rounded-lg flex items-center justify-center order-2 md:order-1"
+              className="aspect-[4/5] rounded-lg overflow-hidden order-2 md:order-1"
               style={{
                 backgroundColor: "var(--mono-bg)",
                 border: "1px solid var(--mono-border)",
               }}
             >
-              <p
-                className="text-sm"
-                style={{
-                  fontFamily: "var(--font-mono)",
-                  color: "var(--mono-accent)",
-                }}
-              >
-                Photo coming soon
-              </p>
+              <img
+                src="/images/reehan-anvil-2025.jpeg"
+                alt="Reehan Ahmed speaking at Whatfix Anvil 2025"
+                className="w-full h-full object-cover object-[35%_15%]"
+              />
             </div>
 
             {/* Content */}
-            <div className="order-1 md:order-2">
+            <div className="order-1 md:order-2 -mt-1">
               <div className="space-y-6">
                 <p
                   className="text-base leading-relaxed"
@@ -92,12 +88,10 @@ export default function AboutPage() {
                     color: "var(--mono-muted)",
                   }}
                 >
-                  I didn&apos;t take the MBA-to-PM pipeline. I started in
-                  support at BrowserStack — triaging enterprise issues, leading a
-                  small team, and building a full-stack debugging tool in Python
-                  because I couldn&apos;t stop asking why things broke the way
-                  they did. That itch to understand systems at their edges, not
-                  just use them, is what pulled me toward product.
+                  Before I transitioned to product, I started in technical
+                  support at BrowserStack - triaging & assisting individual developers and larger QA teams with their manual and automated testing workflows, progressing to lead a
+                  small team, and built a full-stack debugging tool in Python to solve recurring debugging workflows.
+                  This foundation led me to develop empathy truly understand customer problems, and connect technical solutions to user problems.
                 </p>
                 <p
                   className="text-base leading-relaxed"
@@ -107,13 +101,12 @@ export default function AboutPage() {
                   }}
                 >
                   I joined Whatfix as a Solutions Engineer, managing a $1M
-                  enterprise portfolio across Salesforce, Workday, and SAP.
+                  enterprise customer portfolio across Salesforce, Workday, and SAP.
                   Sitting across the table from customers, I kept seeing the same
-                  problem: the platform&apos;s element detection was failing
-                  15–20% of the time. I made the case to own it, moved into
-                  product, and shipped three generations of algorithmic
+                  problem: non-technical users unable to navigate a relatively technical product, while being unable to comprehend why things didn't work as intended when they should. I made the case to own it, moved into
+                  product management, and shipped three generations of algorithmic
                   improvements that brought failure rates under 2%. That system
-                  became the foundation of what Whatfix now calls ScreenSense.
+                  became the foundation of what Whatfix now calls <a href="https://whatfix.com/ai/screensense/" className="text-white underline">ScreenSense</a>.
                 </p>
                 <p
                   className="text-base leading-relaxed"
@@ -122,13 +115,12 @@ export default function AboutPage() {
                     color: "var(--mono-muted)",
                   }}
                 >
-                  Today I lead ScreenSense&apos;s Context Layer — the patented
-                  AI engine powering Whatfix&apos;s DAP, Product Analytics, and
+                  Today I lead ScreenSense&apos;s Context Layer - the patented
+                  AI engine powering Whatfix&apos;s DAP, Product Analytics, Simulation products and
                   AI Agents. I&apos;m most at home in the space between hard
-                  engineering problems and user outcomes. I prototype before I
-                  spec, I build observability into everything, and I&apos;ve
-                  learned that the best AI products are built on solid
-                  algorithmic foundations — not the other way around.
+                  engineering problems and user outcomes. I believe in 'show vs tell', often prototyping before I
+                  spec. Instrumentation and observability is something I deeply value, striving to imbibe this into everything I do. Throughout my time at Whatfix, I&apos;ve
+                  learned that the best AI products/features are built on a solid foundation of "does AI solve or unlock this problem better?" as opposed to force-fitting.
                 </p>
                 <p
                   className="text-base leading-relaxed"
@@ -139,10 +131,8 @@ export default function AboutPage() {
                 >
                   When I&apos;m not shipping, I&apos;m probably deep in an F1
                   race weekend, dialing in a pour-over, mixing a whiskey sour, or
-                  going down a rabbit hole about World War II history. I played
-                  cricket semi-professionally growing up, I listen to everything
-                  from hip hop to techno, and I&apos;m permanently online
-                  tracking the AI landscape.
+                  going down a rabbit hole about World War II history. I&apos;m chronically online
+                  tracking the AI landscape, while tinkering and experimenting with whatever helps me push and refine my own thinking. 
                 </p>
               </div>
             </div>

@@ -75,13 +75,13 @@ export default function WritingPage() {
         }}
       >
         <div className="max-w-5xl mx-auto px-6 md:px-8">
-          {articles.map((article) => {
+          {articles.map((article, index) => {
             const readingTime = getReadingTime(article.content);
             return (
               <Link
                 key={article.slug}
                 href={`/writing/${article.slug}`}
-                className="group block py-6 md:py-8 border-b transition-colors duration-200"
+                className={`group block py-6 md:py-8 transition-colors duration-200 ${index < articles.length - 1 ? "border-b" : ""}`}
                 style={{ borderColor: "var(--mono-border)" }}
               >
                 <div className="flex-1">
