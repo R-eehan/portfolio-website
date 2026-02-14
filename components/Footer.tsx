@@ -91,7 +91,7 @@ export function Footer() {
                 Connect
               </p>
               <a
-                href="https://linkedin.com/in/reehanahmed"
+                href="https://www.linkedin.com/in/reehan-ahmed/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm transition-colors duration-200 hover:text-[var(--mono-text)] inline-flex items-center gap-1.5"
@@ -106,7 +106,7 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="mailto:reehan@example.com"
+                href="mailto:ahmedreehan838@gmail.com"
                 className="text-sm transition-colors duration-200 hover:text-[var(--mono-text)]"
                 style={{
                   fontFamily: "var(--font-sans)",

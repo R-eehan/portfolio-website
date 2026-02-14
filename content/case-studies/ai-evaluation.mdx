@@ -9,7 +9,7 @@ prevSlug: "diagnostics"
 nextSlug: null
 ---
 
-## The Context
+## Context
 
 "Prompt to Rule" is a feature where customers(authors) can describe targeting rules in natural language, and the system converts that into structured JSON rules. We call these rules "visibility rules".
 
@@ -21,7 +21,7 @@ Et voila. Done. The LLM parses the user input, understands the intent and genera
 
 ![Prompt to Rule in action](/images/case-studies/ai-evaluation/AVR_AI.gif)
 
-## The Problem
+## The problem
 
 The feature originally shipped with a manual quality process. The team evaluated accuracy by eyeballing LLM outputs against expected values(JSON), supplemented by a code-based exact-match check. The "golden" dataset? 26 user prompts, mostly based on what internal team members had tried.
 
@@ -42,13 +42,13 @@ A single aggregate accuracy metric for an AI system usually hides more than it r
 
 It was obvious that this was an AI reliability problem. Observability & evals is something I'm really passionate about. The challenge of measuring quality of non-deterministic AI systems in a deterministic way is a hard problem that I find exciting. When accuracy issues surfaced, I dug in to design an evaluation methodology.
 
-### The Insight
+### The insight
 
 Visibility rules decompose naturally into four dimensions: WHERE, WHO, WHEN START, WHEN END. Each dimension has fundamentally different complexity. A WHERE condition might just be a hostname match. A WHEN START condition could involve date ranges, time intervals, repeat rules, timezone handling, Whatfix content events, user actions, AND application state checks. All in one condition.
 
 If we were to build a separate LLM judge for each dimension, with scoring rubrics tailored to that dimension's specific complexity, we could isolate exactly where the system was failing. An LLM judging another LLM's output, dimension by dimension.
 
-### The Methodology
+### The methodology
 
 I designed four separate LLM-as-judge evaluators, one per dimension. Each evaluator has its own weighted scoring formula.
 
@@ -86,7 +86,7 @@ The weighted final score maps to a letter grade:
 
 </TechnicalToggle>
 
-## The Discovery
+## The discovery
 
 The dimension-based evaluation gave us something the single accuracy number never could. A clear picture of where the system was failing, and by how much.
 
@@ -107,7 +107,7 @@ All dimensions were underperforming. But the data revealed a clear severity rank
 
 **WHEN END** at 64% had the fewest condition types but its own pitfalls. 
 
-## The Fix
+## The fix
 
 With failure modes isolated, we made targeted changes to the system prompt:
 
@@ -117,7 +117,7 @@ With failure modes isolated, we made targeted changes to the system prompt:
 
 Same LLM. Same architecture. Targeted prompt improvements based on data from the eval framework.
 
-## The Results
+## The results
 
 <MetricCard value="45% → 85%" label="Overall accuracy" context="Measured on expanded 1,000 prompt dataset" />
 
@@ -133,7 +133,7 @@ A note on methodology: the 45% was measured on the original smaller dataset. The
 
 More importantly, the framework gave us interpretability. We could see exactly which prompts still failed, in which dimension, and why. The framework is still actively running as part of our eval pipeline.
 
-## What I Learned
+## What I learned
 
 <Callout type="insight">
 LLM-as-judge is a debugging tool. When you can see which dimensions fail, improvement becomes targeted instead of guesswork.

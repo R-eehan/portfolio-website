@@ -4,8 +4,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact | Reehan Ahmed",
-  description:
-    "Get in touch to discuss product strategy, AI implementation, or platform engineering.",
+  description: "Get in touch with Reehan Ahmed.",
 };
 
 export default function ContactPage() {
@@ -37,17 +36,16 @@ export default function ContactPage() {
                 color: "var(--mono-text)",
               }}
             >
-              Let&apos;s connect
+              Get in touch
             </h1>
             <p
-              className="text-xl leading-relaxed"
+              className="text-base leading-relaxed"
               style={{
                 fontFamily: "var(--font-sans)",
                 color: "var(--mono-muted)",
               }}
             >
-              Interested in discussing product strategy, AI implementation, or
-              platform engineering? I&apos;d love to hear from you.
+              Based in India. Open to remote or in-person opportunities worldwide.
             </p>
           </div>
         </div>
@@ -55,7 +53,7 @@ export default function ContactPage() {
 
       {/* Contact Options */}
       <section
-        className="pt-6 md:pt-8 pb-10 md:pb-12 border-t"
+        className="pt-6 md:pt-8 pb-12 md:pb-16 border-t"
         style={{
           backgroundColor: "var(--mono-surface)",
           borderColor: "var(--mono-border)",
@@ -65,7 +63,7 @@ export default function ContactPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {/* Email */}
             <a
-              href="mailto:reehan@example.com"
+              href="mailto:ahmedreehan838@gmail.com"
               className="group p-8 rounded-lg border transition-all duration-300 hover:border-[#555555]"
               style={{
                 backgroundColor: "var(--mono-bg)",
@@ -124,13 +122,13 @@ export default function ContactPage() {
                   color: "var(--mono-accent)",
                 }}
               >
-                reehan@example.com
+                ahmedreehan838@gmail.com
               </p>
             </a>
 
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com/in/reehanahmed"
+              href="https://www.linkedin.com/in/reehan-ahmed/"
               target="_blank"
               rel="noopener noreferrer"
               className="group p-8 rounded-lg border transition-all duration-300 hover:border-[#555555]"
@@ -185,7 +183,7 @@ export default function ContactPage() {
                   color: "var(--mono-accent)",
                 }}
               >
-                /in/reehanahmed
+                /in/reehan-ahmed/
               </p>
             </a>
 
@@ -255,98 +253,6 @@ export default function ContactPage() {
               </p>
             </a>
           </div>
-        </div>
-      </section>
-
-      {/* What I'm Looking For */}
-      <section
-        className="py-12 md:py-16 border-t"
-        style={{
-          backgroundColor: "var(--mono-bg)",
-          borderColor: "var(--mono-border)",
-        }}
-      >
-        <div className="max-w-5xl mx-auto px-6 md:px-8">
-          <div className="max-w-3xl">
-            <h2
-              className="text-xl md:text-2xl mb-6"
-              style={{
-                fontFamily: "var(--font-display)",
-                fontWeight: 700,
-                color: "var(--mono-text)",
-              }}
-            >
-              Topics I enjoy discussing
-            </h2>
-
-            <div className="grid sm:grid-cols-2 gap-6">
-              {[
-                {
-                  title: "AI-First Products",
-                  description:
-                    "Strategic integration of AI capabilities — when to use LLMs, when to rely on algorithms.",
-                },
-                {
-                  title: "Platform Engineering",
-                  description:
-                    "Building internal platforms, developer experience, and observability systems.",
-                },
-                {
-                  title: "Product Strategy",
-                  description:
-                    "From 0-to-1 features to scaling existing products. Data-informed decision making.",
-                },
-                {
-                  title: "SaaS & Enterprise",
-                  description:
-                    "B2B product management, enterprise sales cycles, and customer success.",
-                },
-              ].map((topic, i) => (
-                <div key={i}>
-                  <h3
-                    className="text-base mb-2"
-                    style={{
-                      fontFamily: "var(--font-display)",
-                      fontWeight: 700,
-                      color: "var(--mono-text)",
-                    }}
-                  >
-                    {topic.title}
-                  </h3>
-                  <p
-                    className="text-sm leading-relaxed"
-                    style={{
-                      fontFamily: "var(--font-sans)",
-                      color: "var(--mono-muted)",
-                    }}
-                  >
-                    {topic.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Location Note */}
-      <section
-        className="py-12 border-t"
-        style={{
-          backgroundColor: "var(--mono-surface)",
-          borderColor: "var(--mono-border)",
-        }}
-      >
-        <div className="max-w-5xl mx-auto px-6 md:px-8">
-          <p
-            className="text-sm"
-            style={{
-              fontFamily: "var(--font-mono)",
-              color: "var(--mono-muted)",
-            }}
-          >
-            Based in India • Open to remote opportunities worldwide
-          </p>
         </div>
       </section>
 

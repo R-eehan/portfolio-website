@@ -5,7 +5,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About | Reehan Ahmed",
   description:
-    "Platform Product Manager at Whatfix. Building ScreenSense's Context Layer with algorithmic discipline before AI augmentation.",
+    "Senior Platform Product Manager at Whatfix. Builder, PM, endlessly curious.",
 };
 
 export default function AboutPage() {
@@ -37,7 +37,7 @@ export default function AboutPage() {
                 color: "var(--mono-text)",
               }}
             >
-              Building robust foundations before layering intelligence
+              Hey, I&apos;m Reehan.
             </h1>
             <p
               className="text-xl leading-relaxed"
@@ -46,15 +46,14 @@ export default function AboutPage() {
                 color: "var(--mono-muted)",
               }}
             >
-              I&apos;m the primary PM for ScreenSense&apos;s Context Layer at
-              Whatfix — the patented AI engine powering DAP, Analytics, and AI
-              Agents.
+              Senior Platform Product Manager at Whatfix. I build and own the AI
+              engine that powers how millions of people learn and use software.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Photo + Intro Section */}
+      {/* Photo + Bio Section */}
       <section
         className="pt-6 md:pt-8 pb-10 md:pb-12 border-t"
         style={{
@@ -85,18 +84,6 @@ export default function AboutPage() {
 
             {/* Content */}
             <div className="order-1 md:order-2">
-              <h2
-                className="text-xl md:text-2xl mb-5"
-                style={{
-                  fontFamily: "var(--font-display)",
-                  fontWeight: 700,
-                  color: "var(--mono-text)",
-                }}
-              >
-                The journey to platform ownership
-              </h2>
-
-              {/* Placeholder for Reehan's copy */}
               <div className="space-y-6">
                 <p
                   className="text-base leading-relaxed"
@@ -105,8 +92,12 @@ export default function AboutPage() {
                     color: "var(--mono-muted)",
                   }}
                 >
-                  [Reehan to provide: Pre-Whatfix context — what led you here,
-                  your background, and the path to becoming a Platform PM]
+                  I didn&apos;t take the MBA-to-PM pipeline. I started in
+                  support at BrowserStack — triaging enterprise issues, leading a
+                  small team, and building a full-stack debugging tool in Python
+                  because I couldn&apos;t stop asking why things broke the way
+                  they did. That itch to understand systems at their edges, not
+                  just use them, is what pulled me toward product.
                 </p>
                 <p
                   className="text-base leading-relaxed"
@@ -115,9 +106,14 @@ export default function AboutPage() {
                     color: "var(--mono-muted)",
                   }}
                 >
-                  [Reehan to provide: The Whatfix chapter — how you came to own
-                  ScreenSense, what full-stack platform ownership means to you,
-                  and your philosophy on building products]
+                  I joined Whatfix as a Solutions Engineer, managing a $1M
+                  enterprise portfolio across Salesforce, Workday, and SAP.
+                  Sitting across the table from customers, I kept seeing the same
+                  problem: the platform&apos;s element detection was failing
+                  15–20% of the time. I made the case to own it, moved into
+                  product, and shipped three generations of algorithmic
+                  improvements that brought failure rates under 2%. That system
+                  became the foundation of what Whatfix now calls ScreenSense.
                 </p>
                 <p
                   className="text-base leading-relaxed"
@@ -126,58 +122,35 @@ export default function AboutPage() {
                     color: "var(--mono-muted)",
                   }}
                 >
-                  [Reehan to provide: Your approach — algorithmic discipline
-                  before AI augmentation, being data-informed not data-driven,
-                  and what makes your PM style unique]
+                  Today I lead ScreenSense&apos;s Context Layer — the patented
+                  AI engine powering Whatfix&apos;s DAP, Product Analytics, and
+                  AI Agents. I&apos;m most at home in the space between hard
+                  engineering problems and user outcomes. I prototype before I
+                  spec, I build observability into everything, and I&apos;ve
+                  learned that the best AI products are built on solid
+                  algorithmic foundations — not the other way around.
                 </p>
-              </div>
-
-              {/* Key beliefs */}
-              <div
-                className="mt-10 pt-10 border-t"
-                style={{ borderColor: "var(--mono-border)" }}
-              >
-                <h3
-                  className="text-xs tracking-[0.2em] uppercase mb-6"
+                <p
+                  className="text-base leading-relaxed"
                   style={{
-                    fontFamily: "var(--font-mono)",
-                    color: "var(--mono-accent)",
+                    fontFamily: "var(--font-sans)",
+                    color: "var(--mono-muted)",
                   }}
                 >
-                  Core Beliefs
-                </h3>
-                <ul className="space-y-4">
-                  {[
-                    "Algorithmic discipline before AI augmentation",
-                    "Data-informed, not data-driven",
-                    "Build for observability from day one",
-                    "AI as a surgical layer, not a replacement",
-                  ].map((belief, i) => (
-                    <li
-                      key={i}
-                      className="flex items-start gap-3"
-                      style={{ color: "var(--mono-muted)" }}
-                    >
-                      <span
-                        className="w-1.5 h-1.5 rounded-full mt-2 flex-shrink-0"
-                        style={{ backgroundColor: "var(--mono-accent)" }}
-                      />
-                      <span
-                        className="text-base"
-                        style={{ fontFamily: "var(--font-sans)" }}
-                      >
-                        {belief}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                  When I&apos;m not shipping, I&apos;m probably deep in an F1
+                  race weekend, dialing in a pour-over, mixing a whiskey sour, or
+                  going down a rabbit hole about World War II history. I played
+                  cricket semi-professionally growing up, I listen to everything
+                  from hip hop to techno, and I&apos;m permanently online
+                  tracking the AI landscape.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Experience/Timeline Section */}
+      {/* Experience Section */}
       <section
         className="py-12 md:py-16 border-t"
         style={{
@@ -197,10 +170,10 @@ export default function AboutPage() {
             Experience
           </h2>
 
-          <div className="space-y-12">
-            {/* Whatfix */}
+          <div className="space-y-0">
+            {/* Whatfix - Senior Platform PM */}
             <div
-              className="grid md:grid-cols-[200px_1fr] gap-6 pb-12 border-b"
+              className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-6 py-8 border-b"
               style={{ borderColor: "var(--mono-border)" }}
             >
               <div>
@@ -211,28 +184,28 @@ export default function AboutPage() {
                     color: "var(--mono-accent)",
                   }}
                 >
-                  2019 — Present
+                  2025 — Present
                 </p>
               </div>
               <div>
                 <h3
-                  className="text-xl mb-2"
+                  className="text-base mb-1"
                   style={{
-                    fontFamily: "var(--font-display)",
-                    fontWeight: 700,
+                    fontFamily: "var(--font-sans)",
+                    fontWeight: 600,
                     color: "var(--mono-text)",
                   }}
                 >
-                  Whatfix
+                  Senior Platform Product Manager
                 </h3>
                 <p
-                  className="text-base mb-4"
+                  className="text-sm mb-2"
                   style={{
-                    fontFamily: "var(--font-sans)",
-                    color: "var(--mono-muted)",
+                    fontFamily: "var(--font-mono)",
+                    color: "var(--mono-accent)",
                   }}
                 >
-                  Platform Product Manager — ScreenSense Context Layer
+                  Whatfix
                 </p>
                 <p
                   className="text-sm leading-relaxed"
@@ -241,15 +214,18 @@ export default function AboutPage() {
                     color: "var(--mono-muted)",
                   }}
                 >
-                  Primary PM for ScreenSense&apos;s Context Layer — the patented
-                  AI engine powering DAP, Analytics, and AI Agents. Built the
-                  engine, the observability, and co-created the narrative.
+                  Leading ScreenSense&apos;s Context Layer and the Runtime
+                  Platform POD. Shipped AI-powered platform enhancements, built
+                  Diagnostics, and designed the AI evaluation methodology.
                 </p>
               </div>
             </div>
 
-            {/* Placeholder for additional experience */}
-            <div className="grid md:grid-cols-[200px_1fr] gap-6">
+            {/* Whatfix - Platform PM */}
+            <div
+              className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-6 py-8 border-b"
+              style={{ borderColor: "var(--mono-border)" }}
+            >
               <div>
                 <p
                   className="text-sm"
@@ -258,147 +234,178 @@ export default function AboutPage() {
                     color: "var(--mono-accent)",
                   }}
                 >
-                  Prior
+                  2022 — 2025
                 </p>
               </div>
               <div>
+                <h3
+                  className="text-base mb-1"
+                  style={{
+                    fontFamily: "var(--font-sans)",
+                    fontWeight: 600,
+                    color: "var(--mono-text)",
+                  }}
+                >
+                  Associate &rarr; Platform Product Manager
+                </h3>
                 <p
-                  className="text-base"
+                  className="text-sm mb-2"
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    color: "var(--mono-accent)",
+                  }}
+                >
+                  Whatfix
+                </p>
+                <p
+                  className="text-sm leading-relaxed"
                   style={{
                     fontFamily: "var(--font-sans)",
                     color: "var(--mono-muted)",
                   }}
                 >
-                  [Reehan to provide: Previous experience, education, or other
-                  relevant background]
+                  Built the algorithmic foundations that became ScreenSense. Led
+                  three generations of element detection improvements, built
+                  Smart Targeting, and established platform instrumentation from
+                  scratch.
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Speaking & Recognition */}
-      <section
-        className="py-12 md:py-16 border-t"
-        style={{
-          backgroundColor: "var(--mono-surface)",
-          borderColor: "var(--mono-border)",
-        }}
-      >
-        <div className="max-w-5xl mx-auto px-6 md:px-8">
-          <h2
-            className="text-xl md:text-2xl mb-10"
-            style={{
-              fontFamily: "var(--font-display)",
-              fontWeight: 700,
-              color: "var(--mono-text)",
-            }}
-          >
-            Speaking & Recognition
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Speaking */}
+            {/* Whatfix - Solutions Engineer */}
             <div
-              className="p-8 rounded-lg"
-              style={{
-                backgroundColor: "var(--mono-bg)",
-                border: "1px solid var(--mono-border)",
-              }}
+              className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-6 py-8 border-b"
+              style={{ borderColor: "var(--mono-border)" }}
             >
-              <h3
-                className="text-xs tracking-[0.15em] uppercase mb-6"
-                style={{
-                  fontFamily: "var(--font-mono)",
-                  color: "var(--mono-accent)",
-                }}
-              >
-                Speaking
-              </h3>
-              <ul className="space-y-4">
-                <li>
-                  <p
-                    className="text-base mb-1"
-                    style={{
-                      fontFamily: "var(--font-sans)",
-                      color: "var(--mono-text)",
-                    }}
-                  >
-                    Anvil 2025
-                  </p>
-                  <p
-                    className="text-sm"
-                    style={{
-                      fontFamily: "var(--font-mono)",
-                      color: "var(--mono-muted)",
-                    }}
-                  >
-                    [Topic TBD]
-                  </p>
-                </li>
-                <li>
-                  <p
-                    className="text-base mb-1"
-                    style={{
-                      fontFamily: "var(--font-sans)",
-                      color: "var(--mono-text)",
-                    }}
-                  >
-                    DAP Summit
-                  </p>
-                  <p
-                    className="text-sm"
-                    style={{
-                      fontFamily: "var(--font-mono)",
-                      color: "var(--mono-muted)",
-                    }}
-                  >
-                    [Topic TBD]
-                  </p>
-                </li>
-              </ul>
+              <div>
+                <p
+                  className="text-sm"
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    color: "var(--mono-accent)",
+                  }}
+                >
+                  2021 — 2022
+                </p>
+              </div>
+              <div>
+                <h3
+                  className="text-base mb-1"
+                  style={{
+                    fontFamily: "var(--font-sans)",
+                    fontWeight: 600,
+                    color: "var(--mono-text)",
+                  }}
+                >
+                  Senior Solutions Engineer
+                </h3>
+                <p
+                  className="text-sm mb-2"
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    color: "var(--mono-accent)",
+                  }}
+                >
+                  Whatfix
+                </p>
+                <p
+                  className="text-sm leading-relaxed"
+                  style={{
+                    fontFamily: "var(--font-sans)",
+                    color: "var(--mono-muted)",
+                  }}
+                >
+                  Managed a $1M enterprise portfolio across Salesforce, Workday,
+                  and SAP. Deep exposure to enterprise app ecosystems directly
+                  informed the transition to product.
+                </p>
+              </div>
             </div>
 
-            {/* Recognition */}
+            {/* BrowserStack */}
             <div
-              className="p-8 rounded-lg"
-              style={{
-                backgroundColor: "var(--mono-bg)",
-                border: "1px solid var(--mono-border)",
-              }}
+              className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-6 py-8 border-b"
+              style={{ borderColor: "var(--mono-border)" }}
             >
-              <h3
-                className="text-xs tracking-[0.15em] uppercase mb-6"
-                style={{
-                  fontFamily: "var(--font-mono)",
-                  color: "var(--mono-accent)",
-                }}
-              >
-                Recognition
-              </h3>
-              <ul className="space-y-4">
-                <li>
-                  <p
-                    className="text-base mb-1"
-                    style={{
-                      fontFamily: "var(--font-sans)",
-                      color: "var(--mono-text)",
-                    }}
-                  >
-                    Customer Insights Award
-                  </p>
-                  <p
-                    className="text-sm"
-                    style={{
-                      fontFamily: "var(--font-mono)",
-                      color: "var(--mono-muted)",
-                    }}
-                  >
-                    For Diagnostics platform impact
-                  </p>
-                </li>
-              </ul>
+              <div>
+                <p
+                  className="text-sm"
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    color: "var(--mono-accent)",
+                  }}
+                >
+                  2018 — 2021
+                </p>
+              </div>
+              <div>
+                <h3
+                  className="text-base mb-1"
+                  style={{
+                    fontFamily: "var(--font-sans)",
+                    fontWeight: 600,
+                    color: "var(--mono-text)",
+                  }}
+                >
+                  Product Support &rarr; Sr. DevOps Support Engineer
+                </h3>
+                <p
+                  className="text-sm mb-2"
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    color: "var(--mono-accent)",
+                  }}
+                >
+                  BrowserStack
+                </p>
+                <p
+                  className="text-sm leading-relaxed"
+                  style={{
+                    fontFamily: "var(--font-sans)",
+                    color: "var(--mono-muted)",
+                  }}
+                >
+                  Progressed from front-line support to leading a team of 6.
+                  Built a full-stack debugging tool in Python/Flask that
+                  automated diagnostic workflows across teams.
+                </p>
+              </div>
+            </div>
+
+            {/* Education */}
+            <div className="grid md:grid-cols-[200px_1fr] gap-4 md:gap-6 py-8">
+              <div>
+                <p
+                  className="text-sm"
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    color: "var(--mono-accent)",
+                  }}
+                >
+                  2014 — 2018
+                </p>
+              </div>
+              <div>
+                <h3
+                  className="text-base mb-1"
+                  style={{
+                    fontFamily: "var(--font-sans)",
+                    fontWeight: 600,
+                    color: "var(--mono-text)",
+                  }}
+                >
+                  B.E. Electronics & Telecommunication
+                </h3>
+                <p
+                  className="text-sm"
+                  style={{
+                    fontFamily: "var(--font-mono)",
+                    color: "var(--mono-accent)",
+                  }}
+                >
+                  University of Mumbai
+                </p>
+              </div>
             </div>
           </div>
         </div>

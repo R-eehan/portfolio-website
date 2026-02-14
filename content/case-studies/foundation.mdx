@@ -2,13 +2,13 @@
 title: "Setting up the foundations"
 number: "Zero"
 hook: "You can't fix what you don't track. But data alone doesn't tell you what to fix."
-description: "Building the instrumentation layer that laid the groundwork for everything that followed. The pre-read that contextualizes all other case studies."
+description: "Building the instrumentation layer that laid the groundwork for everything that followed"
 tags: ["Instrumentation", "Observability"]
 prevSlug: null
 nextSlug: "screensense-foundation"
 ---
 
-## The Problem
+## The problem
 
 When I joined the ScreenSense(erstwhile "Workflow Engine") team, we had a data problem. Not a "we have too much data" problem. The opposite.
 
@@ -16,7 +16,7 @@ Each time the team or I needed to validate a hypothesis or quantify an issue, we
 
 This made prioritization feel like guesswork. Leadership was relaying individual customer NPS feedback and escalation reports to seek input & figure out why. When a customer complained loudly, we'd scramble. But I had no way of knowing if that complaint represented 1% of our users or 50%.
 
-## The Cost
+## The cost
 
 Every investigation into failure rates, self-service quality, attempt to size a problem, effort to justify a priority required starting from scratch. I'd work with engineering to pull logs. Cross-reference account IDs. Build one-off queries. Aggregate results in spreadsheets. Then do it all again the next week when someone asked a slightly different question.
 
@@ -45,7 +45,7 @@ The key was building dashboards that updated automatically, replacing our spread
 
 **Note**: This wasn't a "pause everything and build instrumentation" initiative. My reasoning was simple: You can't fix what you don't track. Nor could we make good prioritization decisions without reliable data.
 
-## The Result
+## The result
 
 <MetricCard value="Hours" label="Time to insight" context="Down from 3-5 days. Engineering effort shifted from ad-hoc data pulls to instrumenting during development." />
 
@@ -57,7 +57,7 @@ We could finally see, in real time, where to focus. Patterns emerged that we'd n
 
 ![Element strength classification showing strong vs weak step distribution](/images/case-studies/foundation/strong-weak-classification.png)
 
-## The Philosophy
+## The philosophy
 <Callout type="insight">
 The goal is to be data-informed, not solely data-driven
 </Callout>
@@ -66,7 +66,3 @@ This experience crystallized a principle that guides how I work: be data-informe
 
 Instrumentation doesn't make decisions for you. It tells you where to look. It quantifies trade-offs. It can reveal what you don't know. You need the discipline to act on what the data reveals, even when it contradicts your assumptions.
 But the judgment, the "what to do about it," is basically the job and what a Product Manager is hired for. 
-
-## Connection
-
-This foundation, the instrumentation layer, the observability mindset, the data-informed philosophy, underlies everything in the case studies that follow.
