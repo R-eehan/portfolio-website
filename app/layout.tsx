@@ -23,7 +23,7 @@ const ibmPlexMonoDisplay = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Reehan Ahmed",
   description:
-    "Building products at the intersection of algorithms and AI. Platform PM, writer, builder.",
+    "Building products at the intersection of algorithms and AI",
   openGraph: {
     title: "Reehan Ahmed",
     description:

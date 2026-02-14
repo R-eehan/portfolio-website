@@ -31,7 +31,7 @@ export function TechnicalToggle({ title, children }: TechnicalToggleProps) {
               color: "var(--mono-muted)",
             }}
           >
-            Technical
+            Deep dive
           </span>
           <span
             className="text-base"

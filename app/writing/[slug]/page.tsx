@@ -1,3 +1,4 @@
+import React from "react";
 import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
@@ -81,16 +82,33 @@ const mdxComponents = {
       />
     );
   },
-  p: (props: React.HTMLAttributes<HTMLParagraphElement>) => (
-    <p
-      className="text-base leading-relaxed mb-6"
-      style={{
-        fontFamily: "var(--font-sans)",
-        color: "var(--mono-muted)",
-      }}
-      {...props}
-    />
-  ),
+  p: ({ children, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => {
+    // MDX wraps images in <p> tags. Unwrap to prevent invalid HTML
+    // (<figure> inside <p>) which causes Next.js hydration errors.
+    const childArray = React.Children.toArray(children);
+    if (
+      childArray.some(
+        (child) =>
+          React.isValidElement(child) &&
+          (child as React.ReactElement<{ src?: string }>).props?.src !==
+            undefined
+      )
+    ) {
+      return <>{children}</>;
+    }
+    return (
+      <p
+        className="text-base leading-relaxed mb-6"
+        style={{
+          fontFamily: "var(--font-sans)",
+          color: "var(--mono-muted)",
+        }}
+        {...props}
+      >
+        {children}
+      </p>
+    );
+  },
   ul: (props: React.HTMLAttributes<HTMLUListElement>) => (
     <ul
       className="list-disc pl-6 mb-6 space-y-2"
@@ -189,8 +207,26 @@ const mdxComponents = {
     />
   ),
   img: (props: React.ImgHTMLAttributes<HTMLImageElement>) => (
-    // eslint-disable-next-line @next/next/no-img-element
-    <img className="rounded-lg my-6 w-full" alt={props.alt || ""} {...props} />
+    <figure className="my-6">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        className="rounded-lg w-full border"
+        style={{ borderColor: "var(--mono-border)" }}
+        alt={props.alt || ""}
+        {...props}
+      />
+      {props.alt && (
+        <figcaption
+          className="mt-2 text-sm text-center"
+          style={{
+            fontFamily: "var(--font-sans)",
+            color: "var(--mono-muted)",
+          }}
+        >
+          {props.alt}
+        </figcaption>
+      )}
+    </figure>
   ),
 };
 

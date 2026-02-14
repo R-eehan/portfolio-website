@@ -43,17 +43,6 @@ export default function WorkPage() {
           >
             Case Studies
           </h1>
-          <p
-            className="text-lg max-w-xl"
-            style={{
-              fontFamily: "var(--font-sans)",
-              color: "var(--mono-muted)",
-              lineHeight: 1.6,
-            }}
-          >
-            Deep dives into platform product management at Whatfix — from
-            algorithmic foundations to strategic AI augmentation.
-          </p>
         </div>
       </section>
 
