@@ -59,6 +59,16 @@ export function Footer() {
                 Work
               </Link>
               <Link
+                href="/projects"
+                className="text-sm transition-colors duration-200 hover:text-[var(--mono-text)]"
+                style={{
+                  fontFamily: "var(--font-sans)",
+                  color: "var(--mono-muted)",
+                }}
+              >
+                Projects
+              </Link>
+              <Link
                 href="/about"
                 className="text-sm transition-colors duration-200 hover:text-[var(--mono-text)]"
                 style={{

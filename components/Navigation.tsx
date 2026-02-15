@@ -78,6 +78,18 @@ export function Navigation() {
             Writing
           </Link>
           <Link
+            href="/projects"
+            className="text-sm transition-colors duration-200 hover:text-[var(--mono-text)]"
+            style={{
+              fontFamily: "var(--font-sans)",
+              fontWeight: 500,
+              color: isActive("/projects") ? "var(--mono-text)" : "var(--mono-muted)",
+              letterSpacing: "0.01em",
+            }}
+          >
+            Projects
+          </Link>
+          <Link
             href="/about"
             className="text-sm transition-colors duration-200 hover:text-[var(--mono-text)]"
             style={{
@@ -127,7 +139,7 @@ export function Navigation() {
       <div
         className={`md:hidden absolute top-full left-0 right-0 transition-all duration-300 overflow-hidden ${
           isMobileMenuOpen
-            ? "max-h-48 opacity-100 border-b"
+            ? "max-h-64 opacity-100 border-b"
             : "max-h-0 opacity-0"
         }`}
         style={{
@@ -159,6 +171,18 @@ export function Navigation() {
             }}
           >
             Writing
+          </Link>
+          <Link
+            href="/projects"
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="text-base transition-colors duration-200 hover:text-[var(--mono-text)]"
+            style={{
+              fontFamily: "var(--font-sans)",
+              fontWeight: 500,
+              color: isActive("/projects") ? "var(--mono-text)" : "var(--mono-muted)",
+            }}
+          >
+            Projects
           </Link>
           <Link
             href="/about"

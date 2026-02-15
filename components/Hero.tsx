@@ -46,21 +46,7 @@ export function Hero() {
             lineHeight: 1.6,
           }}
         >
-          Building products at the intersection of algorithms and AI.
-        </p>
-
-        {/* Brief context */}
-        <p
-          className="mono-animate-fade text-sm max-w-md"
-          style={{
-            fontFamily: "var(--font-sans)",
-            color: "var(--mono-accent)",
-            opacity: 0,
-            animationDelay: "0.4s",
-            lineHeight: 1.6,
-          }}
-        >
-          Platform PM at Whatfix. I build foundations before I build features.
+          Building products at the intersection of algorithms and AI
         </p>
       </div>
     </section>

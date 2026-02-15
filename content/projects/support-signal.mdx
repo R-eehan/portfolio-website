@@ -1,0 +1,29 @@
+---
+title: "Support signal"
+description: "A Python tool that automates Zendesk ticket analysis using LLMs, turning weeks of manual triage into a 2-hour automated run."
+date: "2025-10-01"
+oneLiner: "Manual ticket triage doesn't scale. What if an LLM could read every conversation thread for you?"
+githubUrl: "https://github.com/reehan-ahmed/ticket-summarizer"
+---
+
+## The problem
+
+To glean & identify patterns that would shape the direction and prioritization for a feature I own, I needed to analyze approximately 2,000 Zendesk support tickets across a 6 month time period. 
+
+The problem: Manual analysis would cripple me and need atleast 3-4 full days of just this work. For reliable insight, I would've had to combine the ticket subject line, the RCA field AND the full conversation thread between customers and support agents. 
+
+This is where the crux of the problem would be revealed, allowing me to have better insight into what the problem was, how did the support agent help and how it was actually resolved.
+
+## The approach
+
+The insight was simple: full ticket threads contain the real signal, and an LLM can read an entire conversation and extract structured information in seconds. I didn't need a dashboard or a fancy UI. I needed a script that could ingest ticket data, run it through an LLM, and spit out a CSV I could upload to Google Sheets and keep working.
+
+## What it does
+
+The tool takes a CSV of Zendesk ticket IDs as input. For each ticket, it fetches the usual metadata + the complete conversation thread - every message from the customer and the support engineer. It then sends the full thread to an LLM with a structured prompt that extracts:
+
+- **Issue summary**: A concise description of what the customer was actually experiencing, based on the full conversation rather than just the subject line.
+- **Root cause**: What was actually causing the problem, often only revealed midway through the thread.
+- **Diagnostics gap analysis**: Whether the issue could have been detected or resolved through self-service diagnostics, and if not, what capability was missing.
+
+Everything outputs to a structured CSV. Each row is a ticket. Each column is a dimension of the analysis. Upload to Google Sheets, create pivot tables, and I have an instant view of patterns across hundreds of tickets.
