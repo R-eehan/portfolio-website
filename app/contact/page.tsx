@@ -189,8 +189,9 @@ export default function ContactPage() {
 
             {/* Resume */}
             <a
-              href="/resume.pdf"
-              download
+              href="https://drive.google.com/file/d/1g6EDFz31CAzGMc2X7f-EixCd2wyNX8n8/view?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group p-8 rounded-lg border transition-all duration-300 hover:border-[#555555]"
               style={{
                 backgroundColor: "var(--mono-bg)",

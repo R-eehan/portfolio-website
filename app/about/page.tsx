@@ -91,7 +91,7 @@ export default function AboutPage() {
                   Before I transitioned to product, I started in technical
                   support at BrowserStack - triaging & assisting individual developers and larger QA teams with their manual and automated testing workflows, progressing to lead a
                   small team, and built a full-stack debugging tool in Python to solve recurring debugging workflows.
-                  This foundation led me to develop empathy truly understand customer problems, and connect technical solutions to user problems.
+                  This foundation led me to develop empathy, truly understand customer problems, and connect technical solutions to user problems.
                 </p>
                 <p
                   className="text-base leading-relaxed"
@@ -115,7 +115,7 @@ export default function AboutPage() {
                     color: "var(--mono-muted)",
                   }}
                 >
-                  Today I lead ScreenSense&apos;s Context Layer - the patented
+                  Today, I lead ScreenSense&apos;s Context Layer - the patented
                   AI engine powering Whatfix&apos;s DAP, Product Analytics, Simulation products and
                   AI Agents. I&apos;m most at home in the space between hard
                   engineering problems and user outcomes. I believe in 'show vs tell', often prototyping before I
